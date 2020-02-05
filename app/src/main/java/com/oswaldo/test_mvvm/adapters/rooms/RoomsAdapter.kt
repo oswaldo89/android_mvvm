@@ -28,6 +28,7 @@ class RoomsAdapter(var context: Context, var items: ArrayList<Restroom>) :
 
         holder.txtName.text = item.name
         holder.txtStreet.text = "Street: ${item.street}"
+        holder.txtDirections.text = item.directions
 
         if (item.country.equals("US")) {
             holder.imgCountry.setImageResource(R.drawable.ic_us)
@@ -42,11 +43,13 @@ class RoomsAdapter(var context: Context, var items: ArrayList<Restroom>) :
         var txtName: TextView
         var txtStreet: TextView
         var imgCountry: ImageView
+        var txtDirections: TextView
 
         init {
             txtName = itemView.findViewById(R.id.txtName)
             txtStreet = itemView.findViewById(R.id.txtStreet)
             imgCountry = itemView.findViewById(R.id.imgCountry)
+            txtDirections = itemView.findViewById(R.id.txtDirections)
         }
     }
 

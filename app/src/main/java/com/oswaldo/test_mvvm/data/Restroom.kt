@@ -9,6 +9,8 @@ class Restroom(
     @SerializedName("city") val city: String,
     @SerializedName("state") val state: String,
     @SerializedName("unisex") val unisex: Boolean,
-    @SerializedName("country") val country: String
+    @SerializedName("country") val country: String,
+    @SerializedName("directions") val directions: String
+
 
 )
